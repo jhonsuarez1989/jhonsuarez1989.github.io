@@ -1,0 +1,328 @@
+/*-------------------------------media---------------------------------*/
+@media (max-width: 575.98px) {
+    h1 {
+      font-size: 40px;
+      line-height: normal; }
+    h2{
+      font-size: 20px;
+      line-height: normal;
+    }
+    h4 {
+      font-size: 20px;
+      line-height: normal; }
+    h3 {
+      font-size: 15px;
+      line-height: normal; }
+    p {
+      font-size: 15px;
+      line-height: normal; }
+  
+    .googlemap{
+      width: 150px;
+      height: 150px;
+    }
+  
+  /*html servicios*/
+    .card__textos h3 {
+        font-size: 15px;
+        }
+    .card__textos p{
+        font-size: 12px;
+      }
+    .imagenContacto img {
+    margin-top: 20px;
+    width: 150px; } 
+  
+  .gallery-containerServicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 200px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  
+  .ilustrationCliente {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 150px;
+    padding: 40px;
+    grid-gap: 35px;
+  }
+  
+  .ilustrationCliente img {
+    width: 130px;
+    height: 130px;
+  }
+    
+  .contenedor-sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  
+  .contenedor-sobre-nosotros img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .imagen-port {
+    width: 100%;
+  }
+  
+  
+  
+    /*fin html servicios*/
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+      h1 {
+      font-size: 40px;
+      line-height: normal; }
+    h4 {
+      font-size: 20px;
+      line-height: normal; }
+    h3 {
+      font-size: 15px;
+      line-height: normal; }
+    p {
+      font-size: 17px;
+      line-height: normal; }
+  
+    .googlemap{
+      width: 250px;
+      height: 150px;
+    }
+  
+  /*html servicios*/
+    .card__textos h3 {
+        font-size: 15px;
+        }
+    .card__textos p{
+        font-size: 12px;
+    }
+  
+  .gallery-containerServicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 200px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  
+    .imgtxt {
+        @include imgtxt;
+    }
+  
+    .ilustration img {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    }
+  
+  .ilustrationCliente {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 180px;
+    padding: 40px;
+    grid-gap: 45px;
+  }
+  
+  .ilustrationCliente img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .contenedor-sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  
+  .contenedor-sobre-nosotros img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .imagen-port {
+    width: 100%;
+  }
+  
+    /*fin html servicios*/
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+      h1 {
+      font-size: 40px;
+      line-height: normal; }
+    h4 {
+      font-size: 20px;
+      line-height: normal; }
+    h3 {
+      font-size: 15px;
+      line-height: normal; }
+    p {
+      font-size: 20px;
+      line-height: normal; }
+  
+  /*html servicios*/
+    .card__textos h3 {
+        font-size: 15px;}
+    .card__textos p{
+        font-size: 12px;}
+  /*fin html servicios*/
+  
+  /*html Nosotros*/
+    .card__textos-nosotros p{
+        font-size: 25px;
+    }
+    .card__textos-nosotros h2{
+        font-size: 35px;
+    }
+  
+  .gallery-containerServicios{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 200px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  
+    .imgtxt{
+        @include imgtxt;
+    }
+  
+    .ilustration img{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    }
+  
+  .ilustrationCliente{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 180px;
+    padding: 40px;
+    grid-gap: 45px;
+  }
+  
+  .ilustrationCliente img{
+    width: 180px;
+    height: 180px;
+  }
+  
+  .contenedor-sobre-nosotros{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  
+  .contenedor-sobre-nosotros img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .imagen-port{
+    width: 100%;
+  }
+  
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+      h1 {
+      font-size: 40px;
+      line-height: normal; }
+    h4 {
+      font-size: 20px;
+      line-height: normal; }
+    h3 {
+      font-size: 15px;
+      line-height: normal; }
+    p {
+      font-size: 20px;
+      line-height: normal; }
+  
+  /*html Nosotros*/
+    .card__textos-nosotros p{
+        font-size: 27px;
+    }
+    .card__textos-nosotros h2{
+        font-size: 40px;
+    }
+  /*fin html Nosotros*/
+    .imgtxt{
+        @include imgtxt;
+    }
+  
+    .ilustration img{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    }
+  
+    .imagen-port{
+    width: 100%;
+  }
+  }
+  
+  
+  
+  @media (min-width: 1200px) {
+      h1 {
+      font-size: 40px;
+      line-height: normal; }
+    h4 {
+      font-size: 20px;
+      line-height: normal; }
+    h3 {
+      font-size: 15px;
+      line-height: normal; }
+    p {
+      font-size: 20px;
+      line-height: normal; }
+  
+    .item-footer cite{
+    text-align: right;
+    color: #4A8CFB;
+    display: block;
+    padding-right: 150px;}
+  
+  /*html Nosotros*/
+    .card__textos-nosotros p{
+        font-size: 27px;
+    }
+    .card__textos-nosotros h2{
+        font-size: 40px;
+    }
+   
+    .imgtxt{
+        @include imgtxt;
+    }
+  
+    .ilustration img{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    }
+  
+    .imagen-port{
+    width: 48%;
+  }
+  }

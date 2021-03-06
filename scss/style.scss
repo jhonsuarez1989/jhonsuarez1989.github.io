@@ -1,0 +1,351 @@
+@import "componentes/body";
+@import "componentes/datos";
+@import "componentes/mixins";
+@import "componentes/nestings";
+
+
+/*---------------------mixins---------------------*/
+.tituloPrincipal {
+    @include tituloPrincipal
+    }
+
+.gallery__img{
+    @include gallery__img;
+    }
+
+.gallery__title{
+	@include gallery__title
+    }
+
+.imgtxt{
+    @include imgtxt;
+    }
+
+/*--------------------index de servicios---------------------*/
+  
+.gallery-containerServicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 400px;
+    padding: 20px;
+    grid-gap: 10px;
+    }
+
+.gallery__imgServicios {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+  
+.gallery__itemServicios {
+    position: relative;
+    }
+  
+.gallery__titleServicios {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: linear-gradient(rgba(90,175,255,0.3), rgba(0,0,0,0.5));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    }
+  
+.gallery__titleServicios:hover {
+    background-color: #21618C;
+    }
+  
+.gallery__itemServicios img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s; 
+    }
+  
+.gallery__itemServicios:hover img {
+    -moz-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(1.02); 
+    }
+
+/*----------------------index Nosotros-----------------------*/
+  
+.ilustration img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+  }
+
+/*----------------------index Clientes-----------------------*/
+
+.ilustrationCliente{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+    grid-auto-rows: 200px;
+    padding: 20px;
+    grid-gap: 50px;
+  }
+  
+.ilustrationCliente img{
+    width: 200px;
+    height: 200px;
+  }
+
+/*------------------------index Footer-----------------------*/
+
+  .main-footer{
+    background: $color_bg_footer;
+    color: $colortextfooter;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__title{
+    color: $colortextfooter;
+  }
+  
+  .item-footer{
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .footer__author{
+    text-align: right;
+    color: $colorauthor;
+    display: block;
+    padding-right: 20px;
+  }
+  
+  .fa-envelope-square{
+    background-color: $colorfacontacto;
+  }
+  
+  .fa-phone-square-alt{
+    background-color: $colorfacontacto;
+  }
+  
+  .fa-building{
+    background-color: $colorfacontacto;
+  }
+  
+  .fa-facebook-f{
+    background-color: $colorfacebook;
+  }
+  
+  .fa-twitter{
+    background-color: $colortwitter;
+  }
+  
+  .fa-pinterest-p{
+    background-color: $colorpinterest;
+  }
+  
+  .fa-instagram{
+    background-color: $colorinstagram;
+  }
+  
+  .fa-map-marker-alt{
+    margin-left: 10px;
+  }
+  
+  .social__link{
+    display: block;
+    text-decoration: none;
+    color: $colortextfooter;
+  }
+  
+  .item-copy:nth-child(5){
+    grid-column-start: span 2;
+    text-align: center;
+    background-image: $colorbody_bg_img;
+    color: black; 
+  }
+  
+  .imagenContacto img {
+    margin-top: 20px;
+    width: 200px; }
+  
+/*-----------------------html Servicios-----------------------*/
+
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto; }
+  
+  .card1 {
+    background: $color_card_1;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  
+  .card__thumbnail {
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 10px;
+    display: inline-block; }
+  
+  .card__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .card__titulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px; }
+  
+  .card__textos {
+    font-family: 'Raleway', sans-serif; }
+  
+  .card__descripcion {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px; }
+  
+  .btn--absolute {
+    position: absolute;
+    right: 25px;
+    background-origin: padding-box; }
+
+/*-----------------------html Nosotros-----------------------*/
+
+.galeria-port{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+.portafolio{
+  margin-bottom: 100px;
+}
+
+/*-----------------------html Clientes-----------------------*/
+
+.gallery-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 20px;
+	grid-auto-rows: 250px;
+	padding: 20px;
+	grid-gap: 10px;
+}
+
+.gallery__item{
+	position: relative;
+}
+
+.gallery__item:nth-child(1){
+	grid-column-start: span 3;
+}
+
+.gallery__item img {
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s; }
+
+.gallery__item:hover img {
+  -moz-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04); }
+
+.vCliente{
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.videoCliente{
+  box-shadow: 0 0 80px black;
+}
+
+/*-----------------------html Formulario-----------------------*/
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  
+  .enviar {
+    margin-top: 20px; }
+  
+  .formulario {
+    margin-top: 20px; }
+
+/*------------------------PRODUCTOS O TIENDA------------------------*/
+
+.item {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.item-titulo {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.itemproduct{
+  display: flex;
+  justify-content: center;
+}
+
+.item-imagen {
+  height: 65%;
+  width: 65%;
+}
+
+#shopping-cart{
+  margin-top: 70px;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 15px;
+}
+
+.item-details > .item-price {
+  margin: 0;
+}
+
+/* ? SHOPPING CART */
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+
+@import "componentes/mediaqueries";
+
